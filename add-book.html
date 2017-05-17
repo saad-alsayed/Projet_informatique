@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>New Entry</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+ 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      </button>
+      <a class="navbar-brand" href="#">E-Bookstore</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.php">Homepage</a></li>
+        <li><a href="library.php">Books list</a></li>
+		<li><a href="reserved.php">Reserved Books</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid text-center">   
+  <div class="row content">
+	<div class="col-sm-2 sidenav">
+	</div>
+	<div class="col-sm-8 text-left">
+		<h1 class="page-header text-center text-primary">Add a new book</h1>
+			
+		<form class="col-xs-6 col-sm-5 col-md-6 col-sm-offset-3" action="add-book.php" method="POST">
+			<div class="form-group">
+				<label for="new-book">Enter the book's information</label>
+				<input type="text" class="form-control" name="title" placeholder="Title..."/><br/>
+				<input type="text" class="form-control" name="author" placeholder="Author..."/><br/>
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" name="ISBN" placeholder="ISBN..."/><br/>
+				<input type="text" class="form-control" name="publisher" placeholder="Publisher..."/><br/>
+				<input type="text" class="form-control" name="year" placeholder="Year of Publication..."/><br/>
+			</div>
+			
+			<button type="submit" class="col-md-4 btn btn-primary">Insert</button>
+			
+		</form>
+	</div>
+    <div class="col-sm-2 sidenav">
+    </div>
+  </div>
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+ </body>
+</html>
